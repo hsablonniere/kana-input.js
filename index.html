@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
+  <title>kana-input.js</title>
+  <link href='http://fonts.googleapis.com/css?family=Permanent+Marker' rel='stylesheet' type='text/css'>
+  <link rel="stylesheet" href="demo.css">
+</head>
+<body>
+
+<h1>kana-input.js</h1>
+
+<p>kana-input.js is a JavaScript library designed to write hiraganas and katakanas using a classic keyboard following
+  the <a
+      href="http://en.wikipedia.org/wiki/Hepburn_romanization">Hepburn</a> romanization system.</p>
+
+<p>Just type classic romaji letters in lower case for hiraganas and in upper case for katakanas. Kanas will appear as
+  you type ;-)</p>
+
+<textarea rows="5" placeholder="kana input demo here..." data-kana-input></textarea>
+
+<p>Just add the script to kana-input.js right before your closing <code>&lt;/body></code> tag and add a <code>data-kana-input</code>
+  attribute on <code>&lt;input></code> or <code>&lt;textarea></code> tags than need to write kanas.</p>
+
+<p>If you have any problem using this lib or if you think you can improve it. Please visit the <a
+    href="https://github.com/hsablonniere/kana-input.js">github</a> page and give your thoughts.</p>
+
+<p class="credits">
+  <a href="https://twitter.com/hsablonniere">@hsablonniere</a>
+</p>
+
+<script src="kana-input.js"></script>
+
+<script type="text/javascript">
+
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-31547032-2']);
+  _gaq.push(['_trackPageview']);
+
+  (function () {
+    var ga = document.createElement('script');
+    ga.type = 'text/javascript';
+    ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0];
+    s.parentNode.insertBefore(ga, s);
+  })();
+
+</script>
+</body>
+</html>
