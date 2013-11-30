@@ -250,6 +250,11 @@
       e.preventDefault();
       ki.insertNewLetter('hiragana', text, position, '。', transformCallback);
     }
+
+    if (newLetter === '-') {
+      e.preventDefault();
+      ki.insertNewLetter('hiragana', text, position, 'ー', transformCallback);
+    }
   };
 
   root.onkeydown = function (e) {
